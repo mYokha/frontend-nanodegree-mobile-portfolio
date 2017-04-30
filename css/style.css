@@ -13,13 +13,11 @@ body {
     color: #333; 
 }
 
-a { color: #12C; }
-a:visited { color: #61C; }
-a:focus { outline: thin dotted; }
-a:hover, a:active { color: #c00; outline: 0; }
 
 ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
-img { border: 0; max-width: 100%; }
+img {
+    max-width: 100%;
+}
 
 header, footer, .container { max-width: 45em; margin: 0 auto; }
 
@@ -39,14 +37,14 @@ header {
     margin: 10px;
 }
 
-header p { 
+.name-position { 
     font-size:1.5em; 
     font-weight: 700; 
     padding-left: 4em;
     float: right;
     text-align: right;
 }
-header p span { 
+.position { 
     font-size: 0.8em;
 }
 
@@ -93,5 +91,5 @@ footer span { float: right; font-style: italic; }
 /* Smartphones (portrait) */
 @media only screen and (max-width: 480px) {
   body { font-size: 12px;}
-  header p { padding-left: 4.5em;}
+  .name-position { padding-left: 4.5em;}
 }
