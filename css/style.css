@@ -19,9 +19,17 @@ img {
     max-width: 100%;
 }
 
-header, footer, .container { max-width: 45em; margin: 0 auto; }
+header, footer, .container {
+    max-width: 45em; 
+    margin: 0 auto; 
+    will-change: transform;
+}
+.hero, .content, .project-item {
+    will-change: transform;
+}
 
 header { 
+    width: 100%;
     padding: 0 0.5em; 
     color: #C90B0B; 
 }
@@ -48,7 +56,7 @@ header {
     font-size: 0.8em;
 }
 
-.hero { 
+.hero {
     padding: 2em; 
     background-color: #f8f8f8; 
     font-size:1.2em;
