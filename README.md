@@ -96,6 +96,15 @@ var pizzaContainer = document.querySelectorAll(".randomPizzaContainer");
       var newwidth = (pizzaContainer[0].offsetWidth + dx) + 'px';
 ```
 Actually, those variables have been located inside of `hangePizzaSizes(size)`, so they've been recalculated a 100 times every time I switched the size of pizza, so I took them out of the function. So now they ace calculated just once everyy time I use the switch and `hangePizzaSizes(size)` can get those variables from outer function.
+3. Another crucial performance issue is that it renders always 200 pizzas on the background to slide. So to sove this one I had to dinamically calculate the number of pizzas depending on theviewport size. Here's what I came up with:
+```
+var intViewportHeight = window.innerHeight;
+  var pizzasInTheRow = cols;
+  var rowQuantity = Math.floor(intViewportHeight / s);
+  var numOfBgPizzas = rowQuantity * pizzasInTheRow;
+```
+4. Also I replaced all `querySelectorAll` with `getElementsByClassName` and all `querySelector` with `getElementById`. Seems like querySelector is not that fast thing to select elements.
+5. Finally I minified the `main.js` to make JavaScript perform a little faster.
 
 ---
 P.S. This project is a real challange because from the time the entire course has been recorded Chrome Dev Tools have changed massively!
