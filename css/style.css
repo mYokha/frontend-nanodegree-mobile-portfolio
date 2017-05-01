@@ -63,14 +63,14 @@ header {
 .project-item { 
     list-style-type: none; 
     font-size: 1.1em;
-    height: 100px;
     margin: 5px;
+    height: 100%;
 }
 
 .project-preview-pic { 
     float:left; 
-    padding-right: 1em; 
-    height: 100%;
+    padding-right: 1em;
+    width: 100px;
 }
 
 .project-info { 
