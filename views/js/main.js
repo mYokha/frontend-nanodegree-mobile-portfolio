@@ -552,7 +552,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //now lets calculate the number of pizzas to be rendered
   var intViewportHeight = window.innerHeight;
   var pizzasInTheRow = cols;
-  var rowQuantity = Math.floor(intViewportHeight / s);
+  var rowQuantity = Math.round(intViewportHeight / s);
   var numOfBgPizzas = rowQuantity * pizzasInTheRow;
     
   for (var i = 0; i < numOfBgPizzas; i++) {

@@ -32,14 +32,16 @@ header {
     border-radius: 50%; 
     max-height: 100%;
     max-width: 20%;
+    float: left;
+    margin-right: 1em;
 }
 
 .name-position { 
     font-size:1.5em; 
     font-weight: 700;
-    float: right;
-    text-align: right;
+    float: left;
 }
+
 .position { 
     font-size: 0.8em;
 }
